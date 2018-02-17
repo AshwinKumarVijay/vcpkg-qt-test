@@ -25,7 +25,7 @@ vcpkg_from_github(OUT_SOURCE_PATH SOURCE_PATH REPO AshwinKumarVijay/vcpkg-qt-tes
 vcpkg_build_msbuild(
     PROJECT_PATH ${SOURCE_PATH}/vsproject/test.sln
     OPTIONS /p:ForceImportBeforeCppTargets=${VCPKG_ROOT_DIR}/scripts/buildsystems/msbuild/vcpkg.targets
-    )
+    ) 
 
 # Copy over the needed include files.
 file(COPY ${SOURCE_PATH}/code/ DESTINATION ${CURRENT_PACKAGES_DIR}/include/vcpkg-qt-test)
