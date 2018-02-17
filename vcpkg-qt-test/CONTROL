@@ -1,0 +1,4 @@
+Source: vcpkg-qt-test
+Version: 0.0.0
+Description: vckpkg-qt-test - with msbuild
+Build-Depends: qt5-base
